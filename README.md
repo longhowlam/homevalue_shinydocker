@@ -7,4 +7,4 @@ The Dockerfile contains the instructions for the docker container
 
 CreateKubernetesCluster.sh contains the gcloud command to spin up a kubernetes cluster
 
-CreateDocker_ShineApp_and_Depluy.sh contains the commands to build the image and deploy it to GCP kubernetes clusetr and expose the service
+CreateDocker_ShineApp_and_Deploy.sh contains the commands to build the image and deploy it to GCP kubernetes clusetr and expose the service
