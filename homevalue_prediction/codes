@@ -1,0 +1,16 @@
+kosten koper vrij op naam 
+
+
+ [1] "Benedenwoning"                                   "Bovenwoning"                                    
+ [3] "BungalowGeschakeldeWoning"                       "BungalowVrijstaandeWoning"                      
+ [5] "DubbelBenedenhuis"                               "EengezinswoningEindwoning"                      
+ [7] "EengezinswoningGeschakeldeTweeOnderEenKapWoning" "EengezinswoningGeschakeldeWoning"               
+ [9] "EengezinswoningHalfvrijstaandeWoning"            "EengezinswoningHoekwoning"                      
+[11] "EengezinswoningTussenwoning"                     "EengezinswoningTweeOnderEenKapWoning"           
+[13] "EengezinswoningVrijstaandeWoning"                "Galerijflat"                                    
+[15] "HerenhuisHoekwoning"                             "HerenhuisTussenwoning"                          
+[17] "HerenhuisTweeOnderEenKapWoning"                  "HerenhuisVrijstaandeWoning"                     
+[19] "Maisonnette"                                     "Penthouse"                                      
+[21] "Portiekflat"                                     "Portiekwoning"                                  
+[23] "Tussenverdieping"                                "VillaTweeOnderEenKapWoning"                     
+[25] "VillaVrijstaandeWoning"                          "Other"     

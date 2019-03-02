@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551355565129.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B587F779",
+    "lastKnownWriteTime" : 1551369851,
+    "last_content_update" : 1551369851437,
+    "path" : "/opt/shiny-server/samples/sample-apps/homevalue_prediction/shcommands.sh",
+    "project_path" : "shcommands.sh",
+    "properties" : {
+        "cursorPosition" : "15,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "sh"
+}

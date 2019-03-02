@@ -1,0 +1,20 @@
+FROM rocker/rstudio
+
+RUN  R -e "install.packages(c( 'magrittr', 'h2o', 'shinydashboard', 'shinycssloaders', 'iml', 'data.table'))" 
+
+COPY shiny-server.conf  /etc/shiny-server/shiny-server.conf
+COPY /homevalue_prediction /srv/shiny-server/
+
+RUN sudo chown -R rstudio /srv/shiny-server/
+
+RUN sudo apt-get update
+RUN sudo apt-get -y install default-jre
+RUN  R -e "install.packages(c( 'dplyr'))" 
+
+# Make the ShinyApp available at port 80
+EXPOSE 80
+
+# Copy further configuration files into the Docker image
+#COPY shiny-server.sh /usr/bin/shiny-server.sh
+#RUN sudo chmod +x /usr/bin/shiny-server.sh 
+#CMD ["/usr/bin/shiny-server.sh"]

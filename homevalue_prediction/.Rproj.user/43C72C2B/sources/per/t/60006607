@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551384386008.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2270976349",
+    "id" : "60006607",
+    "lastKnownWriteTime" : 1551350688,
+    "last_content_update" : 1551350688,
+    "path" : "~/Documents/DockerProjecten/homevalue/homevalue_prediction/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

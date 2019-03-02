@@ -1,0 +1,24 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1550833791587.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "EE596A9F",
+    "lastKnownWriteTime" : 1551354288,
+    "last_content_update" : 1551354288512,
+    "path" : "/opt/shiny-server/samples/sample-apps/homevalue_prediction/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "3,8",
+        "docOutlineSize" : "158",
+        "docOutlineVisible" : "1",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

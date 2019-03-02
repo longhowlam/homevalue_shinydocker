@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1551261340824.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "21CF049E",
+    "lastKnownWriteTime" : 1551262923,
+    "last_content_update" : 1551262923092,
+    "path" : "/opt/shiny-server/samples/sample-apps/homevalue_prediction/test.R",
+    "project_path" : "test.R",
+    "properties" : {
+        "cursorPosition" : "11,18",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

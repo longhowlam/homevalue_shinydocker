@@ -1,0 +1,9 @@
+{
+    "path" : "/opt/shiny-server/samples/sample-apps/homevalue_prediction/data",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
