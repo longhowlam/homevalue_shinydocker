@@ -41,18 +41,8 @@ ui <- dashboardPage(
   dashboardSidebar(width=300,
     sidebarMenu(
       menuItem("Inleiding", tabName = "introduction", icon = icon("dashboard")),
-      menuItem("Huiswaarde en verklaring", tabName = "imagestab", icon = icon("th")),
-      
-      numericInput("woonoppervlakte", "woonoppervlakte in m2", 100, min=10,max=1000),
-      numericInput("aantalkamers", "aantal kamers", 5, min=1, max=15),
-      numericInput("ouderdom", "ouderdom huis (in jaren)", 8, min=0, max=200),
-      numericInput("perceel", "perceel oppervlakte in m2", 100, min=10,max=2000),
-      numericInput("inhoud", "inhoud  in m3", 300, min=50,max=6000),
-      textInput("PC", "postcode", "1628EP"),
-      selectInput("typehuis", "Type huis", wtypes),
-      checkboxInput("vrijopnaam", "Vrij Op Naam"),
-      actionButton("goButton", "Bereken prijs")
-     
+      menuItem("Huiswaarde voorspelling en verklaring", tabName = "imagestab", icon = icon("th")),
+      menuItem("Uitleg model", tabName = "imagestab", icon = icon("th"))
     )
   ),
   dashboardBody(
@@ -77,11 +67,26 @@ ui <- dashboardPage(
               ),
       tabItem(tabName = "imagestab",
           fluidRow(
-            h3("Huiswaarde voorspelling en verklaring"),
-            withSpinner(valueBoxOutput("homevalue"))
+            column(width = 4,
+              numericInput("woonoppervlakte", "woonoppervlakte in m2", 100, min=10,max=1000),
+              numericInput("aantalkamers", "aantal kamers", 5, min=1, max=15),
+              numericInput("ouderdom", "ouderdom huis (in jaren)", 8, min=0, max=200),
+              numericInput("perceel", "perceel oppervlakte in m2", 100, min=10,max=2000),
+              numericInput("inhoud", "inhoud  in m3", 300, min=50,max=6000),
+              textInput("PC", "postcode", "1628EP"),
+              selectInput("typehuis", "Type huis", wtypes),
+              checkboxInput("vrijopnaam", "Vrij Op Naam"),
+              actionButton("goButton", "Bereken prijs")
             ),
-          fluidRow(
-            withSpinner(plotOutput("iml_shaply"))
+            column( width = 8,
+              fluidRow(
+                h3("Huiswaarde voorspelling en verklaring"),
+                withSpinner(valueBoxOutput("homevalue"))
+              ),
+              fluidRow(
+                withSpinner(plotOutput("iml_shaply"))
+              )
+            )
           )
       )
     )
