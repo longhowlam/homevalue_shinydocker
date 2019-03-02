@@ -37,7 +37,7 @@ wtypes = c(
 # UI PART of the app #######################################################################################
 
 ui <- dashboardPage(
-  dashboardHeader(title = "Huiswaarde model voor Nederlandse huizen", titleWidth = 600),
+  dashboardHeader(title = "Huiswaarde model voor Nederlandse huizen", titleWidth = 450),
   dashboardSidebar(width=300,
     sidebarMenu(
       menuItem("Inleiding", tabName = "introduction", icon = icon("dashboard")),
@@ -67,7 +67,7 @@ ui <- dashboardPage(
               ),
       tabItem(tabName = "imagestab",
           fluidRow(
-            column(width = 4,
+            column(width = 3,
               numericInput("woonoppervlakte", "woonoppervlakte in m2", 100, min=10,max=1000),
               numericInput("aantalkamers", "aantal kamers", 5, min=1, max=15),
               numericInput("ouderdom", "ouderdom huis (in jaren)", 8, min=0, max=200),
@@ -78,7 +78,7 @@ ui <- dashboardPage(
               checkboxInput("vrijopnaam", "Vrij Op Naam"),
               actionButton("goButton", "Bereken prijs")
             ),
-            column( width = 8,
+            column( width = 9,
               fluidRow(
                 h3("Huiswaarde voorspelling en verklaring"),
                 withSpinner(valueBoxOutput("homevalue"))
