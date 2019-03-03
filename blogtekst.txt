@@ -1,16 +1,29 @@
 
 Wat is je huis waard?
 
-Mensen die mijn blogjes op linkedin lezen weten dat huizenprijzen een van mijn lievelings hobby data projecten zijn. 
+Mensen die mijn blogjes op linkedin lezen zien dat de prijs van een huis een favoriete onderwerp van mij is. 
 In mijn vorige blogje liet ik een ludiek resultaat zien dat er een relatie bestaat tussen het aantal hotels in de buurt (CBS data) en de waarde van een huis.
 Ook in een eerdere blog liet ik zien hoe je uit de beschrijvingen van huizen de prijs van een huis kon voorspellen
 
 Het automatisch waarderen van huizen is zeker niet nieuw, veel van dat soort waarderingen zijn gebasseerd op het zoeken 
-van vergelijkbare huizen in de buurt. Ik ben geen makelaar, en voor mij met een statistische achtergrond, voelt een regressie aanpak wat natuurlijker. 
+van vergelijkbare huizen in de buurt. Ik ben geen makelaar, en voor mij, voelt een regressie aanpak wat natuurlijker. 
 Dus laat ik dat eens toepassen :-)
 
 Ik heb zo'n 100.000 huizen met een prijs en een aantal basiskenmerken zoals oppervlakte, inhoud, type huis, aantal kamers. Waar je huis staat en in wat 
-voor buurt kan ook van invloed zijn op de prijs, Daarnaast heb ik 
+voor buurt kan ook van invloed zijn op de prijs. Met CBS nabijheidsdata kan ik per huis bepalen hoeveel hotels, restaurants, scholen, stations, etc. 
+in de buurt zijn. Deze data dient als een proxy voor het soort buurt waar je huis in staat: stedelijkheid, populairiteit, economische activiteit, bereikbaar
+
+Een van de simpelere regressie modellen, zeker om mee te beginnen, is lineaire regressie. Dit werkt op deze data niet eens zo slecht, R2 van 0.71 
+en je krijgt een vrij uitlegbaar model. Alleen, er zijn diverse niet-lineaire relaties, en er kunnen interacties zijn tussen variabelen. 
+Met goed feature engineering kan je dit ook in een lineaire regressie model modeleren, het kost wat tijd, en je moet nadenken :-)
+
+Als je een beetje lui bent, kan je ook gewoon wat geavanceerdere ML modellen gebruiken, neem bv een random forest die niet-lineare verbanden en interacties
+automatisch meeneemt. Mijn R2 is nu 0.90, duidelijk een verbetering! Het lastige nu is, hoe kan ik iemand uitleggen hoe de random forest berekende prijs
+van zijn huis tot stand kwam? Een leuke techniek om een uitleg te geven zijn Shapley Values. Voor elk individueel voorspelde huisprijs wordt ook berekend waarom 
+dit specifieke huis afwijkt t.o.v de gemiddelde voorspelling.
+ 
+
+
 
 
 
@@ -19,3 +32,5 @@ https://christophm.github.io/interpretable-ml-book/shapley.html
 https://www.linkedin.com/feed/update/urn:li:activity:6506111683885441024
 
 https://www.linkedin.com/pulse/huis-te-koop-zet-beleggingsobject-je-huisomschrijving-longhow-lam/
+
+http://128.199.59.214/
