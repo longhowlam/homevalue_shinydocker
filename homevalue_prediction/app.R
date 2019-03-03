@@ -42,7 +42,7 @@ ui <- dashboardPage(
     sidebarMenu(
       menuItem("Inleiding", tabName = "introduction", icon = icon("dashboard")),
       menuItem("Huiswaarde voorspelling en verklaring", tabName = "imagestab", icon = icon("th")),
-      menuItem("Uitleg model", tabName = "imagestab", icon = icon("th"))
+      menuItem("Uitleg model", tabName = "uitleg", icon = icon("th"))
     )
   ),
   dashboardBody(
@@ -59,10 +59,12 @@ ui <- dashboardPage(
             h4(" "),
             h4("* Klik op de link: " , strong("Huiswaarde en verklaring")),
             h4("* Vul waarden in en klik op de knop: ", strong("Bereken prijs")),
+            h4(" "),
+            h4(strong("NB."), "Er kunnen geen rechten worden ontleend aan deze shiny app!!"),
             h4("Cheers, Longhow"),
             h4(" "),
             img(src ="home.jpg") 
-                )
+        )
               
               ),
       tabItem(tabName = "imagestab",
@@ -88,6 +90,11 @@ ui <- dashboardPage(
               )
             )
           )
+      ),
+
+      tabItem(
+        tabName = "uitleg",
+        h3("Uitleg komt nog....")
       )
     )
   )
