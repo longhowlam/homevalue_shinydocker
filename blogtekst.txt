@@ -1,0 +1,21 @@
+
+Wat is je huis waard?
+
+Mensen die mijn blogjes op linkedin lezen weten dat huizenprijzen een van mijn lievelings hobby data projecten zijn. 
+In mijn vorige blogje liet ik een ludiek resultaat zien dat er een relatie bestaat tussen het aantal hotels in de buurt (CBS data) en de waarde van een huis.
+Ook in een eerdere blog liet ik zien hoe je uit de beschrijvingen van huizen de prijs van een huis kon voorspellen
+
+Het automatisch waarderen van huizen is zeker niet nieuw, veel van dat soort waarderingen zijn gebasseerd op het zoeken 
+van vergelijkbare huizen in de buurt. Ik ben geen makelaar, en voor mij met een statistische achtergrond, voelt een regressie aanpak wat natuurlijker. 
+Dus laat ik dat eens toepassen :-)
+
+Ik heb zo'n 100.000 huizen met een prijs en een aantal basiskenmerken zoals oppervlakte, inhoud, type huis, aantal kamers. Waar je huis staat en in wat 
+voor buurt kan ook van invloed zijn op de prijs, Daarnaast heb ik 
+
+
+
+https://christophm.github.io/interpretable-ml-book/shapley.html
+
+https://www.linkedin.com/feed/update/urn:li:activity:6506111683885441024
+
+https://www.linkedin.com/pulse/huis-te-koop-zet-beleggingsobject-je-huisomschrijving-longhow-lam/
