@@ -94,7 +94,9 @@ ui <- dashboardPage(
 
       tabItem(
         tabName = "uitleg",
-        h3("Uitleg komt nog....")
+        h3("Zie mijn Linkedin article voor verdere uitleg:", 
+           a("Blogje", href="https://www.linkedin.com/pulse/wat-mijn-huis-waard-leg-dat-eens-uit-longhow-lam/")
+        )
       )
     )
   )

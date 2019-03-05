@@ -14,7 +14,7 @@ docker rmi $(docker images -f "dangling=true" -q)
 docker rmi e43d2230f5ff --force
 ## save
 docker save -o ~/Documents/DockerProjecten/homevalue_shinydocker/homevalueshinyapp.tar homevalue
-
+docker save -o homevalueshinyapp.tar homevalue
 ## (re)load
 docker load -i homevalueshinyapp.tar
 docker run -p 80:80 homevalue
