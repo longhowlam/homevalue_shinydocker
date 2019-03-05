@@ -63,7 +63,9 @@ ui <- dashboardPage(
             h4(strong("NB."), "Er kunnen geen rechten worden ontleend aan deze shiny app!!"),
             h4("Cheers, Longhow"),
             h4(" "),
-            img(src ="home.jpg") 
+            hr(),
+            img(src ="huis.PNG") ,
+            img(src="varimp.png")
         )
               
               ),

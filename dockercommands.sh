@@ -11,7 +11,7 @@ docker run -p 80:80 homevalue
 
 # Delete dangling images
 docker rmi $(docker images -f "dangling=true" -q)
-docker rmi e43d2230f5ff --force
+docker rmi 0d405aaa496f --force
 ## save
 docker save -o ~/Documents/DockerProjecten/homevalue_shinydocker/homevalueshinyapp.tar homevalue
 docker save -o homevalueshinyapp.tar homevalue
